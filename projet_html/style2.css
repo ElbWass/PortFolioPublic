@@ -1,0 +1,42 @@
+
+.diapo figure img
+{
+  width: 20%;
+  float: left;
+  margin:0;
+  border: 0;
+}
+
+.diapo figure
+{
+  position: relative;
+  width: 500%;
+  -webkit-animation: 10s sliderleft infinite;
+  margin:0;
+  border: 0;
+}
+
+.diapo
+{
+  max-width: 100%;
+  height: 250px;
+  overflow: hidden;
+  margin: 0 auto;
+  border: 20px solid white;
+  margin:0;
+  border: 0;
+}
+
+@-webkit-keyframes sliderleft
+{
+  0% { left: 0%;}
+  20% { left: 0%;}
+  25% { left: -100%;}
+  45% { left: -100%;}
+  50% { left: -200%;}
+  70% { left: -200%;}
+  75% { left: -300%;}
+  85% { left: -300%;}
+  95% { left: -400%;}
+  100% { left: -400%;}
+}

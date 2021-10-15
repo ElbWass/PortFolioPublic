@@ -1,0 +1,32 @@
+
+h1
+{
+	color:black;
+	text-align: center;
+}
+
+h2
+{
+	color:#b677d4;
+	text-align: center;
+}
+
+form
+{
+	padding:10px;
+	background-color:#363636;
+}
+
+p
+{
+	padding-left: 310px;
+	text-align: left;
+	color:#b677d4;
+}
+
+label.left
+{
+	float: left;
+	margin-left: -305px;
+	font-weight:bold;
+}

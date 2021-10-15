@@ -1,0 +1,168 @@
+
+div.tete
+{
+  background-image: url("images/logo.png");
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  background-color: #363636;
+
+}
+
+
+div.menu
+{
+  margin-top: -16px;
+  background-color: #81f0a3;
+}
+
+ul.menu2
+{
+  list-style-type: none;
+  background-color: #363636;
+  font-size: 20px;
+  text-align: right;
+}
+
+li.inl
+{
+  display:inline;
+
+}
+
+li.inl a:hover
+{
+  background-color: white;
+  color: #b677d4;
+}
+
+a.m
+{
+  color:#b677d4;
+  text-decoration: none;
+}
+
+div.rec1
+{
+  width: 100%;
+  float:left;
+  background-color: #94839b;
+  height: 25%;
+}
+
+div.rec2
+{
+  float: right;
+  width: 100%;
+  background-color: #79737a;
+  height: 25%;
+}
+
+div.rec3
+{
+  float: right;
+  width: 100%;
+  background-color: #94839b;
+  height: 25%;
+
+}
+
+div.rec4
+{
+  float: right;
+  width: 100%;
+  background-color: #79737a;
+  height: 25%;
+}
+
+div.section
+{
+  font-size: 12px;
+  margin-top: -16px;
+}
+
+div.crumble
+{
+  background-image: url("images/crumble.jpg");
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+div.tiramisu
+{
+  background-image: url("images/tiramisu.jpg");
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+div.macaron
+{
+  background-image: url("images/macaron.jpeg");
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+div.tarte
+{
+  background-image: url("images/tarte.jpg");
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+
+ul.ing1,ul.ing2,ul.ing3,ul.ing4
+{
+  list-style-type: square;
+}
+
+ul.pre1,ul.pre2,ul.pre3,ul.pre4
+{
+  list-style-type: decimal;
+}
+
+h2
+{
+  text-decoration: underline;
+  text-align: center;
+}
+
+p
+{
+  text-align: left;
+  width: 50%;
+}
+
+table,td
+{
+  height: 100px;
+  background-color: #363636;
+  color: white;
+  border: 2px solid #81f0a3;;
+  border-collapse: collapse;
+}
+
+td
+{
+  width: 33%;
+}
+
+h2.a
+{
+  text-align: center;
+  text-decoration: underline;
+  color: #b677d4;
+}
+
+table.a
+{
+  width: 100%;
+}
