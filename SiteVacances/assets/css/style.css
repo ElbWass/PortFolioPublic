@@ -1,0 +1,368 @@
+/*
+colors:
+    rgb(191, 15, 30);
+    rgb(39, 122, 140);
+*/
+
+
+*{
+    box-sizing: border-box;
+    font-family: 'Stick No Bills', sans-serif;    
+    word-break: break-word;
+}
+
+body{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color:rgb(39, 122, 140);
+}
+nav
+{
+    text-align: center;
+}
+[class*="important"]
+{
+    color: rgb(191, 15, 30);
+}
+.menu-principal a:not(a:last-of-type)
+{    
+    margin-right: 1rem;
+}
+input
+{
+    border-radius: 1rem;
+}
+.text-important
+{
+    text-decoration: underline;
+}
+.box-button-submit
+{
+    text-align: center;
+}
+[type="submit"]
+{
+    cursor: pointer;
+}
+.box-button-submit [type="submit"]
+{
+    padding: 1rem 1.5rem 1rem;
+    border: none;
+    border-radius: 1rem;
+    color: white;
+    background-color: rgb(39, 122, 140);
+}
+.box-button-submit [type="submit"]:hover
+{
+    background-color: rgb(191, 15, 30);
+}
+header.principal
+{    
+    min-height: 22rem;
+    margin-bottom: 5rem;
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid black;    
+    background-image: url("../img/famille-vacances-plage.jpg");
+    background-size: cover;
+    background-position: top left;
+    letter-spacing: .1rem;
+    color: white;   
+}
+.header-center
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+h3, h2, dt
+{
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding: .2rem .2rem .2rem .7rem;
+    font-size: 1.5rem;
+    border-bottom: 2px solid rgb(191, 15, 30);
+    border-left: 2px solid rgb(191, 15, 30);
+}
+.title-2 
+{
+    border-bottom: 2px solid rgb(39, 122, 140);
+    border-left: 2px solid rgb(39, 122, 140);
+}
+p
+{
+    margin-top: 0;
+    text-align: justify;
+}
+input:hover, input:active, input:focus
+{
+    color: white;
+    background-color: rgb(39, 122, 140);
+    border: .1rem solid rgb(39, 122, 140);
+}
+[class^="subtitle-decoration"]
+{
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    margin-right: .7rem;
+    background-color: rgb(191, 15, 30);
+    transition: all .5s linear;
+}
+.subtitle-decoration-2
+{
+    background-color: rgb(39, 122, 140);
+}
+article:hover [class^="subtitle-decoration"]
+{
+    transform-origin: center center;
+    transform: rotate(720deg);
+}
+.subtitle-block
+{
+    display: flex;
+}
+header.principal button
+{
+    height: 1.3rem;
+}
+header.principal, header.principal a
+{    
+    color: lightsalmon;
+    text-shadow: -.05rem 0 black, 0 .05rem black,
+    .05rem 0 black, 0 -.05rem black;
+}
+header.principal a:hover:not(.logo a, .connexion a)
+{
+    color: rgb(191, 15, 30);    
+    text-decoration: underline;    
+}
+fieldset
+{    
+    margin: 1rem auto 3.5rem;
+    /*color: rgb(39, 122, 140);*/
+    border: 1px solid rgb(39, 122, 140);
+    border-radius: .5rem;
+}
+select
+{
+    width: 100%;
+}
+legend
+{
+    margin: auto;
+    padding: 1rem;
+    border-radius: 50%;
+    color: white;
+    background-color: rgb(39, 122, 140);
+}
+.table
+{
+    display: table;    
+    width: 100%;
+}
+.row
+{
+    display: table-row;    
+}
+[class^="cell"]
+{
+    display: table-cell; 
+    padding: 1rem;
+}
+.cell-1
+{
+    width: 30%;
+}
+.cell-2
+{
+    width: 70%;
+}
+
+textarea, [class^="cell"] label,
+[class^="cell"] input:not([type="radio"], [type="checkbox"])
+{
+    width: 100%;
+}
+.different-align
+{
+    vertical-align: top;
+}
+.different-label
+{
+    display: inline;
+}
+figure{ 
+    position: relative;
+    margin: 0 1rem 1rem 0;    
+    color: white;
+    font-weight: bold;
+    background-color: rgb(39, 122, 140);
+}
+figcaption
+{
+    display: block;
+    position: absolute;   
+    bottom: 0;     
+    width: 100%;    
+    padding: .2rem .5rem .2rem;
+    background-color: rgba(39, 122, 140,.5);
+}
+.figcaption-2
+{
+    background-color: rgba(191, 15, 30, .5);
+}
+textarea{
+    padding: 1rem;
+    border-radius: .5rem;
+}
+input, select, textarea, textarea:hover, textarea:active
+{
+    color: rgb(39, 122, 140);
+    border: .1rem solid rgb(39, 122, 140);
+}
+.container{
+    margin: auto;
+    width: 70%;   
+}
+.connexion
+{    
+    height: 1.5rem;    
+    font-size: .9rem;   
+    font-weight: 800;
+}
+.connexion > ul
+{
+    margin: 0;
+    width: 9.5rem;    
+    padding: .1rem .5rem .5rem;
+    list-style-type: none;    
+    text-align: left;    
+}
+.connexion > ul:hover
+{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, .5);    
+}
+.connexion a:hover
+{
+    color:rgb(191, 15, 30);
+    text-shadow: none;
+    font-weight: 800;
+    text-decoration: none;
+}
+.hidden-ul
+{
+    display: none;  
+    margin: .3rem 0 .3rem;
+    padding: 0;    
+    list-style-type: none;  
+}
+.connexion:hover .hidden-ul
+{
+    display: block;          
+}
+.main-search
+{
+    width: 18rem;
+}
+input, [class$="search"]
+{
+    height: 1.5rem;
+}
+article
+{
+    margin: 1rem 1rem 3rem;
+    padding: 1rem;   
+    border: .01rem solid rgba(8, 8, 8, 0.4);
+    border-radius: .5rem;
+    color: rgba(8, 8, 8, .7);
+    clear: both;
+}
+p:first-of-type:first-letter
+{
+    float: left;
+    font-size: 3.1rem;    
+    line-height: 3.1rem;
+    padding-right: .2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+article, fieldset
+{
+    box-shadow: .5rem .5rem .1rem .1rem rgba(0, 0, 0, .6);
+}
+article .illustration img
+{
+    display: block; /* pour supprimer l'espace blanc de 4px sous les images lié au caractère inline des images */
+    width: 100%;
+    object-fit: contain;
+}
+@media screen and (min-width: 768px)
+{
+    header.principal
+    {
+        display: flex;
+        justify-content: space-between;        
+    }
+    .logo
+    {        
+        margin-left: 2rem;
+    }
+    .box-illustration-n-text
+    {
+        display: flex;
+    }
+    article .illustration
+    {
+        width: 50%;
+        height: 50%; 
+    }
+    .illustration-text
+    {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 768px)
+{    
+    header.principal
+    {
+        position: relative;
+        display: block;
+        min-height: 1rem;
+    }
+    .header-center
+    {
+        margin-top: 4rem;
+    }
+    .container
+    {
+        width: 100%;
+    }
+    .logo
+    {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+    }
+    .connexion
+    {
+        position: absolute;
+        z-index: 99;
+        top: 3rem;
+        left: .5rem;
+    }
+    article .illustration
+    {
+        width: 100%;
+        height: 50%; 
+    }
+    .illustration-text
+    {
+        width: 100%;
+    }
+}
