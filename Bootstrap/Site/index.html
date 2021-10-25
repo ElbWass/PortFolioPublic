@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="Site/assets/js/script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <title>Site</title>
+    <style>
+        .entete{
+            background-image: url("assets/img/baniere.jpg");
+            min-height: 566px;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="container-fluid p-0 img-fluid " id="index">
+        <div class="entete">
+            <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#index">FootBallAccess</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                  <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="index.html" id="navbarScrollingDropdown" role="button" data-toggle="dropdown" >
+                        Accueil
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                        <a href="index.html"><li class="dropdown-item">Accueil</li></a>
+                        <a href="inscription.html"><li class="dropdown-item">Connexion</li></a>
+                        <a href="contact.html"><li class="dropdown-item">Contact</li></a>
+                      </ul>
+                    </li>
+                  </ul>
+                  <form class="d-flex">
+                    <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+                </div>
+            </nav>
+            <div class=" d-flex flex-column justify-content-between align-items-center">
+                <span></span>
+                <h1 class="text-light text-center">FootBallAccess</h1>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <main class="container-fluid p-3">
+        <h2 class="text-center m-3">Les Equipes</h2>
+        <section class="container">
+            <div class="container col-4">
+                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a class="btn btn-outline-dark text-center ">
+                            <figure class="figure">
+                                <img src="assets/img/logo_psg.jpg" alt="Psg"
+                                    class="img-fluid rounded-circle">
+                            </figure>
+                                <h4>PSG</h4>
+                                <p>Ligue 1</p>
+                        </a>
+                    </div>
+                    <div class="carousel-item ">
+                        <a class="btn btn-outline-dark text-center ">
+                            <figure class="figure">
+                                <img src="assets/img/logo_mcu.png" alt="Mcu"
+                                    class="img-fluid rounded-circle">
+                            </figure>
+                                <h4>Manchester United</h4>
+                                <p>Premier League</p>
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a class="btn btn-outline-dark text-center">
+                            <figure class="figure">
+                                <img src="assets/img/logo_mcs.png" alt="Mcs"
+                                    class="img-fluid rounded-circle">
+                            </figure>
+                                <h4>Manchester City</h4>
+                                <p>Premier League</p>
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                      <a class="btn btn-outline-dark text-center">
+                        <figure class="figure">
+                            <img src="assets/img/logo_bayern.png" alt="Bayern"
+                                class="img-fluid rounded-circle">
+                        </figure>
+                            <h4>Bayern Munich</h4>
+                            <p>Bundesliga</p>
+                      </a>
+                    </div>
+                    <div class="carousel-item">
+                      <a class="btn btn-outline-dark text-center">
+                        <figure class="figure">
+                            <img src="assets/img/logo_fcb.png" alt="FCB"
+                                class="img-fluid rounded-circle">
+                        </figure>
+                            <h4>FC Barcelone</h4>
+                            <p>La Liga</p>
+                      </a>
+                    </div>
+            
+                  <a class="carousel-control-prev bg-dark" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next bg-dark" href="#carouselExampleCaptions" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+        </section>
+        <div>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, delectus nostrum soluta ipsam ducimus deserunt debitis distinctio dignissimos velit voluptate magni dolorem laborum praesentium ab officia cum voluptatibus itaque ipsum?
+            Natus ad autem quos vitae magni dolor fugiat dolorem, minus ullam voluptatibus. Laboriosam obcaecati voluptatum nulla cupiditate necessitatibus repellendus dolore similique vitae voluptas est, aliquam, aliquid fugiat sint. Nam, minus?
+            Sint sapiente nulla voluptatum nesciunt! Non praesentium numquam aspernatur laborum ab! Officiis aspernatur repellendus repudiandae! Consequatur repudiandae voluptate vero, dolorum sed error obcaecati, perspiciatis officiis illo ratione totam quod optio.
+            Rem sit cumque quis rerum? Exercitationem explicabo assumenda enim alias ullam, cum labore quisquam delectus minima esse voluptates tenetur voluptas deserunt voluptatibus libero? Harum alias iusto atque repellendus doloribus sapiente.
+        </div>
+
+        <div id="ici">
+            Nulla vel non adipisci corporis aliquam harum iusto mollitia porro! Est maxime libero mollitia quis dolor eaque ut debitis dolore voluptates ratione! Dicta, beatae natus vero necessitatibus quasi saepe architecto.
+            Porro ipsam recusandae ut incidunt in eum quia rerum debitis, voluptatibus repellendus expedita maxime quidem repudiandae sunt fugiat magnam perspiciatis ullam aut doloremque est harum reiciendis dicta placeat non. Voluptate?
+            Est impedit nulla, vero possimus esse corrupti similique. Consequuntur dicta magnam, odio et est repellendus. Facilis provident ad distinctio minus, dignissimos iste ea earum non reiciendis blanditiis deleniti cumque similique?
+            Nesciunt eligendi eius totam cupiditate officiis recusandae. Numquam accusantium magni suscipit, modi accusamus odit facere, libero nihil, mollitia sunt optio nam ad sint. Eos ipsam laborum officia, odit vero molestias.
+            Delectus voluptatum aliquam reprehenderit dolor illum mollitia veniam voluptas? Saepe illo eius reprehenderit voluptate aut, culpa temporibus adipisci assumenda repellendus sunt neque consectetur totam enim soluta. Recusandae, ipsum! Minus, a.
+            Totam adipisci tempore distinctio sint quos voluptates, rem corrupti! Inventore quod assumenda fugiat tempore beatae obcaecati nesciunt magni molestiae exercitationem iure cumque expedita officia earum deserunt illum eaque, est delectus?
+            Sed, incidunt eaque perspiciatis deleniti non doloribus aperiam ad amet placeat modi iure. Recusandae non hic qui tempora voluptatum temporibus, natus vel expedita vero sunt asperiores eius enim sequi deleniti!
+        </div>
+    </main>
+</body>
+
+</html>

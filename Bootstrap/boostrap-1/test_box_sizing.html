@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <style>
+
+        [class*="boite"] /* sélecteur d'attributs : tout les éléments dont la classe contient "boite" */
+        {
+            width: 120px; 
+            height: 120px; 
+            padding: 16px;
+            font-size: 32px;
+            color: white;
+            border: 10px solid black;
+        }
+        .premiere-boite
+        {
+            box-sizing: border-box; /* CETTE PROPRIETE INTEGRE LE PADDING ET L'EPAISSEUR DE LA */            
+        }                           /* BORDURE DANS LE CALCUL DE LA TAILLE DE LA PREMIERE BOITE */
+                                    /* LES 2 BOITES ONT A LA BASE LA MEME TAILLE, LA MEME BORDURE */
+                                    /* ET LE MEME PADDING MAIS L UNE VA GARDER LA MEME TAILLE */
+                                    /* GRACE A LA PROPRIETE BOX-SIZING: BORDER-BOX;*/
+        .contenu
+        {
+            height: 100%; background-color: darkred;
+        }
+  </style>
+<title>Propriete box-sizing: border-box</title>
+</head>
+<body>
+<h1>LA PROPRIETE BOX-SIZING: BORDER-BOX</h1>
+  <div class="premiere-boite">
+        <div class="contenu">1</div>
+  </div>
+  <div class="seconde-boite">
+        <div class="contenu">2</div>
+  </div>
+  
+</body>
+</html>

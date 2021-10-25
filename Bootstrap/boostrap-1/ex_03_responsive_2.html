@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    
+    <title>1ere page</title>
+</head>
+<body>
+    <!-- 
+        Ex03: 
+        Réaliser une page d'accueil avec un header occupant toute 
+        la largeur de l'écran
+        et 4 longs paragraphes (lorem300).
+        Le header contient juste un titre centré : "Ma première page 
+        Boostrap"
+        Chaque colonne a un titre h3 (colonne 1, colonne 2..) et 
+        1 paragraphe en dessous.
+    
+        aide :
+            border : met une bordure autour de l'élément.
+            text-left : aligne le texte à gauche
+            text-center : centre le texte.
+            text-right : aligne le texte à droite
+            p-0 : supprime tout padding dans l'élément
+            row : met les éléments présent dans le conteneur en ligne
+            mx-0 : supprime la marge à gauche et à droite 
+            text-md-center : centre le texte lorsque l'écran est de taille medium            
+    -->    
+
+
+    <div class="container-fluid border p-0">
+        <header class="container-fluid border mx-0">
+            <nav class="container-fluid row border">
+                <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">Logo+dénomination</div>
+                <div class="text-center text-sm-left col-sm-12 col-md-12 col-lg-4 col-xl-4">barre de recherche</div>
+                <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 text-sm-left text-lg-right text-xl-right">connexion</div>
+            </nav>
+            <h1 class="text-center my-3">Titre de la page</h1>  
+            <nav class="container text-center border">
+                menu de navigation
+            </nav> 
+        </header>       
+        
+        <section class="container-fluid row mx-0 border-danger">
+            <article class="col-sm-12 col-md-6 col-lg-4 col-xl-4 border">
+                <h3>Colonne 1</h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam voluptas temporibus possimus. Debitis maxime cupiditate quo sit in consequuntur unde numquam sapiente. Pariatur tenetur iure, ullam ipsum laborum eum? Pariatur atque obcaecati saepe possimus dicta laborum, impedit voluptate deserunt, modi laudantium explicabo nihil fugit magnam in! Laboriosam, architecto. Nemo, minus.
+                </p>
+            </article>
+            <article class="col-sm-12 col-md-6 col-lg-4 col-xl-4 border">
+                <h3>Colonne 2</h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam voluptas temporibus possimus. Debitis maxime cupiditate quo sit in consequuntur unde numquam sapiente. Pariatur tenetur iure, ullam ipsum laborum eum? Pariatur atque obcaecati saepe possimus dicta laborum, impedit voluptate deserunt, modi laudantium explicabo nihil fugit magnam in! Laboriosam, architecto. Nemo, minus.
+                </p>
+            </article>
+            <article class="col-sm-12 col-md-6 col-lg-4 col-xl-4 border">
+                <h3>Colonne 3</h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam voluptas temporibus possimus. Debitis maxime cupiditate quo sit in consequuntur unde numquam sapiente. Pariatur tenetur iure, ullam ipsum laborum eum? Pariatur atque obcaecati saepe possimus dicta laborum, impedit voluptate deserunt, modi laudantium explicabo nihil fugit magnam in! Laboriosam, architecto. Nemo, minus.
+                </p>
+            </article>           
+        </section>
+        <div class="container text-center p-2">
+            fin de section
+        </div>
+        <section class="container-fluid row mx-0 border">
+            <article class="col-sm-12 col-md-6 col-lg-6 col-xl-6 border">
+                <h3>Colonne 1</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, dolore ab deserunt sit ducimus placeat nesciunt voluptates? Asperiores perferendis, fuga dolorem accusantium vel illum! Praesentium expedita non quasi quos quam ipsum temporibus enim, eius nesciunt alias cum architecto modi culpa ipsa aperiam optio! Enim repudiandae corrupti dignissimos rem et mollitia!
+                </p>
+            </article>
+            <article class="col-sm-12 col-md-6 col-lg-6 col-xl-6 border">
+                <h3>Colonne 2</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, dolore ab deserunt sit ducimus placeat nesciunt voluptates? Asperiores perferendis, fuga dolorem accusantium vel illum! Praesentium expedita non quasi quos quam ipsum temporibus enim, eius nesciunt alias cum architecto modi culpa ipsa aperiam optio! Enim repudiandae corrupti dignissimos rem et mollitia!
+                </p>
+            </article>
+        </section>
+        <div class="container text-center p-2">
+            fin de section
+        </div>
+        <footer class="container-fluid text-center mx-auto row border">
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">option 1</div>
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">option 2</div>
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">option 3</div>
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">option 4</div>
+        </footer>
+
+    </div> <!-- END <div class="container-fluid border p-0"> -->
+</body>
+</html>

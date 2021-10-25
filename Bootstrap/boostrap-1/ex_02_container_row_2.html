@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <title>Container-fluid et container</title>
+</head>
+<body>
+    <!-- 
+        Ex02: 
+        Réaliser une page d'accueil avec un header occupant toute 
+        la largeur de l'écran et 4 longs paragraphes (lorem300) en-dessous
+        Le header contient 2 nav : 
+            - une dans la partie inférieure avec logo à gauche barre de recherche au milieu et connexion à droite.
+            - une dans la partie inférieure "menu de navigation"
+        Le header contient également au milieu "Titre de la page"e 
+        
+        Chaque colonne a un titre h3 (colonne 1, colonne 2..) et 1 paragraphe en dessous.
+    
+        aide :
+            border : met une bordure autour de l'élément.
+            text-left : aligne le texte à gauche
+            text-center : centre le texte.
+            text-right : aligne le texte à droite
+            p-0 : supprime tout padding dans l'élément
+            row : met les éléments présent dans le conteneur en ligne
+            mx-0 : supprime la marge à gauche et à droite       
+    -->    
+
+    <div class="container-fluid border p-0">
+        <header class="container-fluid p-0 m-0 border">
+            <nav class="row mx-0 border">
+                <div class="col-4 text-left">Logo+dénomination</div>
+                <div class="col-4 text-center">barre de recherche</div>
+                <div class="col-4 text-right">connexion</div>
+            </nav>        
+            <div class="container-fluid">   
+                <h1 class="text-center my-3">Titre de la page</h1>                           
+            </div>
+            <div class="container text-center border">
+                menu de navigation
+            </div> 
+        </header>
+        <div class="container-fluid row mx-0 border-danger">
+            <div class="col-4 border">
+                <h3>Colonne 1</h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, doloremque, nihil voluptates minima dignissimos assumenda quos tempore voluptatum iste, iusto quas necessitatibus molestias ullam magni est neque obcaecati et corporis! Dolore ipsa itaque iure modi id ex facilis eum minus in unde, reiciendis vel cumque neque sapiente fugit autem! Autem accusamus, repellat non modi aliquam eveniet velit, doloribus dolorum deserunt veritatis possimus odio quisquam doloremque quia, veniam cum distinctio facere nihil? Laboriosam natus quisquam quasi iste possimus consectetur rem facilis nisi, incidunt a similique saepe voluptatibus at voluptatem, tenetur, tempora voluptates! Id excepturi corrupti dolores doloremque ullam distinctio quam exercitationem eligendi molestias nobis dolore sunt, architecto alias dolorum pariatur quidem eius mollitia sit? Nihil voluptatum cum illum quidem? Asperiores ipsa dolores voluptates iure debitis modi quia, eligendi quas culpa, repellendus eius ipsum magni? Neque cumque dolore quaerat ad natus, pariatur porro odit suscipit ex doloribus necessitatibus dolor nihil aspernatur sed dicta? Dolorem unde reprehenderit illum distinctio nam cumque itaque maiores nemo molestias ducimus, aut fuga dicta quos repellat architecto. Velit dolores culpa illo sequi at? Laudantium minus officia nisi sint voluptatem iure nulla natus tenetur. Quia fugit vero porro possimus velit cum eos veritatis laudantium assumenda nobis quae voluptatibus non saepe beatae obcaecati cumque explicabo, deleniti, soluta ex, rem sed! Placeat, consequuntur necessitatibus similique repudiandae illo ullam nulla veritatis autem adipisci numquam iste accusantium beatae eos asperiores perspiciatis non dignissimos enim expedita quasi. Sunt, amet dolor vero neque voluptas quaerat obcaecati est fuga aperiam nam aut repudiandae modi veritatis, accusamus dolorum commodi accusantium. Vero quisquam perferendis iste nemo nisi? Rem cupiditate dolores perferendis saepe ratione velit tempore debitis beatae assumenda hic corrupti numquam ea aspernatur placeat modi molestiae libero aliquid sint, nisi voluptatem! Quaerat dignissimos, beatae maxime vel eos, aut consectetur libero perspiciatis blanditiis reprehenderit veniam harum qui impedit laborum!
+                </p>
+            </div>
+            <div class="col-4 border">
+                <h3>Colonne 2</h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, doloremque, nihil voluptates minima dignissimos assumenda quos tempore voluptatum iste, iusto quas necessitatibus molestias ullam magni est neque obcaecati et corporis! Dolore ipsa itaque iure modi id ex facilis eum minus in unde, reiciendis vel cumque neque sapiente fugit autem! Autem accusamus, repellat non modi aliquam eveniet velit, doloribus dolorum deserunt veritatis possimus odio quisquam doloremque quia, veniam cum distinctio facere nihil? Laboriosam natus quisquam quasi iste possimus consectetur rem facilis nisi, incidunt a similique saepe voluptatibus at voluptatem, tenetur, tempora voluptates! Id excepturi corrupti dolores doloremque ullam distinctio quam exercitationem eligendi molestias nobis dolore sunt, architecto alias dolorum pariatur quidem eius mollitia sit? Nihil voluptatum cum illum quidem? Asperiores ipsa dolores voluptates iure debitis modi quia, eligendi quas culpa, repellendus eius ipsum magni? Neque cumque dolore quaerat ad natus, pariatur porro odit suscipit ex doloribus necessitatibus dolor nihil aspernatur sed dicta? Dolorem unde reprehenderit illum distinctio nam cumque itaque maiores nemo molestias ducimus, aut fuga dicta quos repellat architecto. Velit dolores culpa illo sequi at? Laudantium minus officia nisi sint voluptatem iure nulla natus tenetur. Quia fugit vero porro possimus velit cum eos veritatis laudantium assumenda nobis quae voluptatibus non saepe beatae obcaecati cumque explicabo, deleniti, soluta ex, rem sed! Placeat, consequuntur necessitatibus similique repudiandae illo ullam nulla veritatis autem adipisci numquam iste accusantium beatae eos asperiores perspiciatis non dignissimos enim expedita quasi. Sunt, amet dolor vero neque voluptas quaerat obcaecati est fuga aperiam nam aut repudiandae modi veritatis, accusamus dolorum commodi accusantium. Vero quisquam perferendis iste nemo nisi? Rem cupiditate dolores perferendis saepe ratione velit tempore debitis beatae assumenda hic corrupti numquam ea aspernatur placeat modi molestiae libero aliquid sint, nisi voluptatem! Quaerat dignissimos, beatae maxime vel eos, aut consectetur libero perspiciatis blanditiis reprehenderit veniam harum qui impedit laborum!
+                </p>
+            </div>
+            <div class="col-4 border">
+                <h3>Colonne 3</h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, doloremque, nihil voluptates minima dignissimos assumenda quos tempore voluptatum iste, iusto quas necessitatibus molestias ullam magni est neque obcaecati et corporis! Dolore ipsa itaque iure modi id ex facilis eum minus in unde, reiciendis vel cumque neque sapiente fugit autem! Autem accusamus, repellat non modi aliquam eveniet velit, doloribus dolorum deserunt veritatis possimus odio quisquam doloremque quia, veniam cum distinctio facere nihil? Laboriosam natus quisquam quasi iste possimus consectetur rem facilis nisi, incidunt a similique saepe voluptatibus at voluptatem, tenetur, tempora voluptates! Id excepturi corrupti dolores doloremque ullam distinctio quam exercitationem eligendi molestias nobis dolore sunt, architecto alias dolorum pariatur quidem eius mollitia sit? Nihil voluptatum cum illum quidem? Asperiores ipsa dolores voluptates iure debitis modi quia, eligendi quas culpa, repellendus eius ipsum magni? Neque cumque dolore quaerat ad natus, pariatur porro odit suscipit ex doloribus necessitatibus dolor nihil aspernatur sed dicta? Dolorem unde reprehenderit illum distinctio nam cumque itaque maiores nemo molestias ducimus, aut fuga dicta quos repellat architecto. Velit dolores culpa illo sequi at? Laudantium minus officia nisi sint voluptatem iure nulla natus tenetur. Quia fugit vero porro possimus velit cum eos veritatis laudantium assumenda nobis quae voluptatibus non saepe beatae obcaecati cumque explicabo, deleniti, soluta ex, rem sed! Placeat, consequuntur necessitatibus similique repudiandae illo ullam nulla veritatis autem adipisci numquam iste accusantium beatae eos asperiores perspiciatis non dignissimos enim expedita quasi. Sunt, amet dolor vero neque voluptas quaerat obcaecati est fuga aperiam nam aut repudiandae modi veritatis, accusamus dolorum commodi accusantium. Vero quisquam perferendis iste nemo nisi? Rem cupiditate dolores perferendis saepe ratione velit tempore debitis beatae assumenda hic corrupti numquam ea aspernatur placeat modi molestiae libero aliquid sint, nisi voluptatem! Quaerat dignissimos, beatae maxime vel eos, aut consectetur libero perspiciatis blanditiis reprehenderit veniam harum qui impedit laborum!
+                </p>
+            </div>           
+        </div>
+        <div class="container text-center p-2">
+            fin de section
+        </div>
+        <div class="container-fluid row mx-0 border">
+            <div class="col-6 border">
+                <h3>Colonne 1</h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, doloremque, nihil voluptates minima dignissimos assumenda quos tempore voluptatum iste, iusto quas necessitatibus molestias ullam magni est neque obcaecati et corporis! Dolore ipsa itaque iure modi id ex facilis eum minus in unde, reiciendis vel cumque neque sapiente fugit autem! Autem accusamus, repellat non modi aliquam eveniet velit, doloribus dolorum deserunt veritatis possimus odio quisquam doloremque quia, veniam cum distinctio facere nihil? Laboriosam natus quisquam quasi iste possimus consectetur rem facilis nisi, incidunt a similique saepe voluptatibus at voluptatem, tenetur, tempora voluptates! Id excepturi corrupti dolores doloremque ullam distinctio quam exercitationem eligendi molestias nobis dolore sunt, architecto alias dolorum pariatur quidem eius mollitia sit? Nihil voluptatum cum illum quidem? Asperiores ipsa dolores voluptates iure debitis modi quia, eligendi quas culpa, repellendus eius ipsum magni? Neque cumque dolore quaerat ad natus, pariatur porro odit suscipit ex doloribus necessitatibus dolor nihil aspernatur sed dicta? Dolorem unde reprehenderit illum distinctio nam cumque itaque maiores nemo molestias ducimus, aut fuga dicta quos repellat architecto. Velit dolores culpa illo sequi at? Laudantium minus officia nisi sint voluptatem iure nulla natus tenetur. Quia fugit vero porro possimus velit cum eos veritatis laudantium assumenda nobis quae voluptatibus non saepe beatae obcaecati cumque explicabo, deleniti, soluta ex, rem sed! Placeat, consequuntur necessitatibus similique repudiandae illo ullam nulla veritatis autem adipisci numquam iste accusantium beatae eos asperiores perspiciatis non dignissimos enim expedita quasi. Sunt, amet dolor vero neque voluptas quaerat obcaecati est fuga aperiam nam aut repudiandae modi veritatis, accusamus dolorum commodi accusantium. Vero quisquam perferendis iste nemo nisi? Rem cupiditate dolores perferendis saepe ratione velit tempore debitis beatae assumenda hic corrupti numquam ea aspernatur placeat modi molestiae libero aliquid sint, nisi voluptatem! Quaerat dignissimos, beatae maxime vel eos, aut consectetur libero perspiciatis blanditiis reprehenderit veniam harum qui impedit laborum!
+                </p>
+            </div>
+            <div class="col-6 border">
+                <h3>Colonne 2</h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, doloremque, nihil voluptates minima dignissimos assumenda quos tempore voluptatum iste, iusto quas necessitatibus molestias ullam magni est neque obcaecati et corporis! Dolore ipsa itaque iure modi id ex facilis eum minus in unde, reiciendis vel cumque neque sapiente fugit autem! Autem accusamus, repellat non modi aliquam eveniet velit, doloribus dolorum deserunt veritatis possimus odio quisquam doloremque quia, veniam cum distinctio facere nihil? Laboriosam natus quisquam quasi iste possimus consectetur rem facilis nisi, incidunt a similique saepe voluptatibus at voluptatem, tenetur, tempora voluptates! Id excepturi corrupti dolores doloremque ullam distinctio quam exercitationem eligendi molestias nobis dolore sunt, architecto alias dolorum pariatur quidem eius mollitia sit? Nihil voluptatum cum illum quidem? Asperiores ipsa dolores voluptates iure debitis modi quia, eligendi quas culpa, repellendus eius ipsum magni? Neque cumque dolore quaerat ad natus, pariatur porro odit suscipit ex doloribus necessitatibus dolor nihil aspernatur sed dicta? Dolorem unde reprehenderit illum distinctio nam cumque itaque maiores nemo molestias ducimus, aut fuga dicta quos repellat architecto. Velit dolores culpa illo sequi at? Laudantium minus officia nisi sint voluptatem iure nulla natus tenetur. Quia fugit vero porro possimus velit cum eos veritatis laudantium assumenda nobis quae voluptatibus non saepe beatae obcaecati cumque explicabo, deleniti, soluta ex, rem sed! Placeat, consequuntur necessitatibus similique repudiandae illo ullam nulla veritatis autem adipisci numquam iste accusantium beatae eos asperiores perspiciatis non dignissimos enim expedita quasi. Sunt, amet dolor vero neque voluptas quaerat obcaecati est fuga aperiam nam aut repudiandae modi veritatis, accusamus dolorum commodi accusantium. Vero quisquam perferendis iste nemo nisi? Rem cupiditate dolores perferendis saepe ratione velit tempore debitis beatae assumenda hic corrupti numquam ea aspernatur placeat modi molestiae libero aliquid sint, nisi voluptatem! Quaerat dignissimos, beatae maxime vel eos, aut consectetur libero perspiciatis blanditiis reprehenderit veniam harum qui impedit laborum!
+                </p>
+            </div>
+        </div>
+        <div class="container text-center p-2">
+            fin de section
+        </div>
+        <div class="container-fluid row text-center mx-auto mb-5 border">
+            <div class="col-3">option 1</div>
+            <div class="col-3">option 2</div>
+            <div class="col-3">option 3</div>
+            <div class="col-3">option 4</div>
+        </div>
+
+    </div>
+</body>
+</html>
